@@ -1,55 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Appointment</title>
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
-<link rel="stylesheet" href="../bootstrap-4.5.0-dist/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment</title>
+    <link rel="stylesheet" href="../bootstrap-4.5.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="../css/technician.css">
+<script src="https://kit.fontawesome.com/ebfafc2eb8.js" crossorigin="anonymous"></script>
+<script src="../js/doctors.js"></script>
 </head>
 <body>
-<div class="container">
 
-      <form class="form-group">
-        <h2>Please fill out all information, to book an appointment.</h2>
-        <div class="form-group">
-          <label for="first_name">First Name</label>
-          <input type="text" class="form-control" id="first_name" placeholder="First Name" required autofocus autocomplete="on">
-          <span class="help-block"></span>
-        </div>
-        <div class="form-group">
-          <label for="last_name">Last Name</label>
-          <input type="text" class="form-control" id="last_name" placeholder="Last Name" required autofocus autocomplete="on">
-          <span class="help-block"></span>
-        </div>  
-        <div class="form-group">
-          <label for="email_address">Email Address</label>
-          <input type="email" class="form-control" id="email_addr" placeholder="Email address" required>
-          <span class="help-block"></span>
-        </div>
-        <div class="form-group">
-          <label for="email_address_confirm">Please re-confirm your email address.</label>
-          <input type="email" class="form-control" id="email_address_confirm" placeholder="Confirm email address" required autocomplete="off">
-          <span class="help-block"></span>
-        </div>
-        <div class="form-group">
-          <label for="phone_number">Phone Number</label>
-          <input type="tel" class="form-control" id="phone_number" placeholder="+254-714-060467">
-          <span class="help-block"></span>
-        </div>
-        <div class="form-group">
-          <label for="dob">Date of Birth</label>
-          <input type="date" class="form-control" id="dob">
-          <span class="help-block"></span>
-        </div>
-        <div class="form-group">
-          <label for="age">Age</label>
-          <input type="number" class="form-control" id="age" placeholder="Age" min="1" max="110" required>
-          <span class="help-block"></span>
-        </div>     
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Make appointment</button>
-      </form>
+<a href="add_appointment.html">Place Appointment</a>
+<!-- Search Bar -->
+<div class="searchbox animated zoomIn">
+    <form method="get">
+        <input oninput="triggercross(this.value)" type="text" placeholder="search" id="search" name="search"
+            class="search"><i class="fas fa-search"></i>
+        <button onclick="close1()" id="closeid" type="reset" class="close">
+            <i class="fas fa-times"></i>
+            <p id="demo"></p>
+        </button>
+    </form>
+</div>
+<br><br>
 
-    </div> <!-- /container -->
+
+    <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Appointment No.</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Email Address</th>
+            <th scope="col">Contacts</th>
+            <th scope="col">DOB</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">2</th>
+                <td>Jemimah Wangari</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+                <td>@fat</td>
+                <td>@fat</td>
+                
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Jemimah Wangari</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+                <td>@fat</td>
+                <td>@fat</td>
+                </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jemimah Wangari</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+                <td>@fat</td>
+                <td>@fat</td>
+                </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jemimah Wangari</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+                <td>@fat</td>
+                <td>@fat</td>
+                
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jemimah Wangari</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+                <td>@fat</td>
+                <td>@fat</td>
+                </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jemimah Wangari</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+                <td>@fat</td>
+                <td>@fat</td>
+                </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jemimah Wangari</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+                <td>@fat</td>
+                <td>@fat</td>
+                </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jemimah Wangari</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td>@fat</td>
+            <td>@fat</td>
+            </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Abi Hassan</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+            <td>@fat</td>
+            <td>@fat</td>
+            </tr>
+        </tbody>
+      </table>
 </body>
 </html>

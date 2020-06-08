@@ -1,7 +1,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Formicon-Flat Forms Pack</title>
+		<title>Add Patients</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="icons/styles.css">
 		<link rel="stylesheet" href="css/bootstrap-custom.css">
@@ -25,30 +25,20 @@
 				<p><input type="number" placeholder="Contact" required>
 				</p>
 				<p><input type="number" placeholder="Emergency Contact" required></p>
-				<div class="row">
-					<p class="col-md-4"><input type="text" placeholder="Date (dd)" required></p>
-					<p class="col-md-4"><input type="text" placeholder="Month (mm)" required></p>
-					<p class="col-md-4"><input type="text" placeholder="Year (yyyy)" required></p>
-          <p class="col-md-12"><input type="text" placeholder="Assigned Number"><span class="extern-type">Enter your assigned number, if you do not have one, leave it blank.</span></p>
-				</div>
+				<p><input type="text" placeholder="Home Address" required>
+				<p><input type="date" placeholder="Date of Birth" required>	
 				<div class="row">
 					<p class="col-md-6 city-wrap">
 						<select>
-							<option value="0" selected disabled>City</option>
-							<option value="1"> Nairobi</option>
-							<option value="2">Kisumu</option>
-							<option value="3">Mombasa</option>
+							<option value="0" selected disabled>Sex</option>
+							<option value="1"> Male</option>
+							<option value="2">Female</option>
+							<option value="3">Other</option>
 						</select>
 					</p>
-					<p class="col-md-6 country-wrap">
-						<!-- Add more country name -->
-						<select>
-							<option value="0" selected disabled>Country</option>
-							<option value="1">Kenya Only</option>
-							<option value="2">Outside Kenya.</option>
-						</select>
-					</p>
-          <br/>
+					
+					
+          
 				<p class="register-submit"><input type="submit" value="Add Patient"></p>
 			</form>
     </div>
